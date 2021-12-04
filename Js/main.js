@@ -2,7 +2,7 @@
 
 class SmoothScroll {
     constructor(options) {
-      
+       // define each values
       this.endThreshold = 0.05;
       this.requestId = null;
       this.maxDepth = 10;
@@ -25,14 +25,14 @@ class SmoothScroll {
       this.maxElapsedMS = 100;
       this.targetFPMS = 0.06;
   
-      // this.scrollBody = options.scrollBody;
-      // this.scrollSpacer = options.scrollSpacer;
+        // define each options
   
       this.target = options.target;
-  
+       // define how i want to scroll and smooth out the scroll
       this.scrollEase = options.scrollEase != null ? options.scrollEase : 0.1;
       this.maxOffset = options.maxOffset != null ? options.maxOffset : 500;
   
+        // define the scroll body
       this.horizontalScrollWrapper = options.horizontalScrollWrapper;
   
       this.horizontalScrollTarget = options.horizontalScrollTarget;
